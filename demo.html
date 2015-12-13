@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="live-border.css"/>
+    <script type="text/javascript" src="http://lib.sinaapp.com/js/jquery/1.8.3/jquery.min.js"></script>
+    <title></title>
+    <style>
+        body{
+            padding: 10px;
+            background: #888;
+        }
+        .example{
+            margin-bottom: 20px;
+        }
+        .btn{
+            display: inline-block;
+            padding: 10px;
+            background: #47F;
+            color: #fff;
+        }
+    </style>
+    <script type="text/javascript" src="live-border.js"></script>
+    <script type="text/javascript">
+    $(function(){
+        $("#id-btn1").liveBorder();
+        $("#id-btn2").liveBorder({
+            top: true, 
+            right: true, 
+            bottom: true, 
+            left: true
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class="example">
+        <div class="btn">
+            blog.z4none.me
+        </div>
+    </div>
+    <div class="example">
+        <div class="btn" id="id-btn1">
+            live border bottom
+        </div>
+    </div>
+    <div class="example">
+        <div class="btn" id="id-btn2">
+            live border around
+        </div>
+    </div>
+</body>
+</html>
